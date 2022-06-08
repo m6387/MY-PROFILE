@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'main/images/pic4.jpg' %}"
+      alt="Profile"
+      class="img-thumbnail"
+      width="250px"
+      height="60px"
+    />
+  </div>
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold">Hello,</h1>
+    <div class="px-4" style="line-height: 2rem">
+      <p style="text-indent: 100px">
+        I am <b class="text-warning"> MONU</b> having 1 years of experience in
+        web developer.Lorem ipsum loremque quibusdam culpa fugiat, quod, sequi
+        corporis error reiciendis enim mollitia dolorum fuga itaque. Vel fugit
+        qui unde ipsam nemo voluptatum, quisquam iure, voluptatibus dolor omnis
+        corporis fugiat sit suscipit laborum expedita in. Obcaecati ex
+        doloremque earum quaerat dicta nihil animi illo. Dolorum voluptates
+        tempora ad molestiae unde impedit hic laborum, dicta eligendi, quibusdam
+        doloribus dignissimos quos, veniam earum. Nulla eligendi ratione et
+        dolore ut ea quam ipsa ex error animi? Impedit laudantium ad tenetur!
+        Ipsum quos reiciendis cupiditate, omnis similique voluptatibus sint
+        nobis molestiae distinctio nam voluptate perferendis nobis molestiae
+        distinctio nam voluptate perferendis.
+      </p>
+    </div>
+    <div class="text-center">
+      <a href="{% url 'about' %}" class="btn btn-outline-warning my-3 mr-3"
+        >About me</a
+      >
+      <a href="{% url 'contact' %}" class="btn btn-outline-info my-3"
+        >Contact</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock content %}
